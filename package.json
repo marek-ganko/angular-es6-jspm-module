@@ -1,14 +1,13 @@
 {
-  "name": "ng-maps",
-  "version": "0.1.1",
-  "description": "Maps directive",
+  "name": "angular-es6-jspm-module",
+  "version": "0.0.0",
+  "description": "Angular ES6 JSPM Module",
   "devDependencies": {
     "bower": "^1.3.12",
     "gulp": "^3.8.11",
     "gulp-load-plugins": "^0.8.1",
     "gulp-util": "^3.0.4",
     "gulp-help": "^1.3.3",
-    "gulp-less": "^1.2.3",
     "jspm": "*"
   },
   "jspm": {
@@ -16,6 +15,10 @@
       "baseURL": "./",
       "lib": "src",
       "packages": "jspm_packages"
+    },
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.6",
+      "jade": "github:johnsoftek/plugin-jade@^0.4.0"
     }
   },
   "scripts": {

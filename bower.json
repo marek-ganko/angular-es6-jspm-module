@@ -1,6 +1,6 @@
 {
   "name": "angular-es6-jspm-module",
-  "version": "0.1.1",
+  "version": "0.0.0",
   "main": "angular-es6-jspm-module.js",
   "description": "Angular ES6 JSPM Module",
   "ignore": [
