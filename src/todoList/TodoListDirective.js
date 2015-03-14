@@ -1,10 +1,9 @@
 import template from './template.jade!';
 import './style.css!';
-import HereMaps from './HereMaps';
 
 export default class TodoListDirective {
 
-  constructor(filters, mapService) {
+  constructor(localStorage) {
     this.restrict = 'E';
     this.transclude = true;
     this.template = template;
@@ -27,4 +26,4 @@ export default class TodoListDirective {
 
 }
 
-TodoListDirective.$inject = ['LocalStorage'];
+TodoListDirective.$inject = ['localStorage'];

@@ -2,7 +2,6 @@ import register from '../utils/register';
 import TodoListDirective from './TodoListDirective';
 
 export default register('')
-  .directive('nokiaMap', MapDirective)
-  .service('mapService', MapService);
+  .directive('todoList', TodoListDirective);
 
-console.log('AppModules loaded');
+console.log('directives to do loaded');

@@ -1,6 +1,6 @@
 import {Storage} from './Storage';
 
-export class LocalStorage extends Storage {
+export default class LocalStorage extends Storage {
 
   constructor() {
     console.log('LocalStorage Initiated');

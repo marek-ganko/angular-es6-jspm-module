@@ -3,16 +3,19 @@
     <meta charset="utf-8">
     <title>Angular Module Demo</title>
     <meta name="description" content="Angular Module Demo">
-</head>
-<body>
-dupa
-<script src="jspm_packages/system.js"></script>
-<script src="config.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script>
-    System.import('src/AppDemo').catch(console.error.bind(console));
-</script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
 
+    <script>
+        System.import('src/AppDemo').catch(console.error.bind(console));
+    </script>
+</head>
+
+<body>
+<div>
+    <todo-list></todo-list>
+</div>
 </body>
 </html>
 

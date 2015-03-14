@@ -2,6 +2,7 @@ var gulp = require('gulp'),
   gulpins = require('gulp-load-plugins')(),
   bowerPackage = require('./bower.json'),
   sources = {
+    srcPath: 'src/**/*',
     less: 'src/**/*.less'
   },
   config = {
@@ -34,9 +35,21 @@ gulp.task('version', 'Prints the bower package version.', [], function() {
   aliases: ['v', 'V']
 });
 
-/**
- * Default task
- */
+
+gulp.task('serve', 'serves files by the server', ['less'], function () {
+  gulpins.connect.server({
+    root: './',
+    port: config.port,
+    livereload: true
+  });
+
+  gulp.src('index.html')
+    .pipe(gulpins.open('', {
+      url: config.url + ':' + config.port + '/index.html',
+      app: config.browser
+    }));
+});
+
 gulp.task('default', 'starts the application', ['less', 'serve'], function () {
   gulp.watch(sources.less, ['less']);
 
